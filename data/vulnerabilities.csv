@@ -1,0 +1,115 @@
+vuln_id,asset_id,vulnerability_name,cve,severity,cvss,exploit_available,patch_available,days_open,asset_exposure,auth_required,status,affected_component
+V-2001,A-1001,Remote Code Execution in Web Framework,CVE-SYN-2026-0001,Critical,9.8,Yes,Yes,18,Internet,No,Open,Web Framework
+V-2002,A-1001,OpenSSH Unauthenticated RCE (regreSSHion),CVE-2024-6387,High,8.1,Yes,Yes,42,Internet,No,Open,OpenSSH
+V-2003,A-1001,Outdated TLS Configuration,CVE-SYN-2025-0182,Medium,5.9,No,Yes,74,Internet,No,Open,TLS
+V-2004,A-1001,Missing HTTP Security Headers,CVE-SYN-2024-0901,Low,3.7,No,Yes,120,Internet,No,Open,HTTP Config
+V-2005,A-1002,API Authentication Bypass,CVE-SYN-2026-0002,Critical,9.6,Yes,Yes,9,Internet,No,Open,API Gateway
+V-2006,A-1002,OpenSSH Unauthenticated RCE (regreSSHion),CVE-2024-6387,High,8.1,Yes,Yes,39,Internet,No,Open,OpenSSH
+V-2007,A-1002,Verbose API Error Disclosure,CVE-SYN-2024-0144,Low,3.1,No,Yes,120,Internet,No,Open,Application Config
+V-2008,A-1002,Unvalidated Redirect in OAuth Flow,CVE-SYN-2025-0312,Medium,6.1,No,Yes,55,Internet,No,Open,OAuth Handler
+V-2009,A-1003,Payment API Insecure Direct Object Reference,CVE-SYN-2026-0010,Critical,9.1,Yes,Yes,11,Internet,No,Open,Payment Handler
+V-2010,A-1003,OpenSSH Unauthenticated RCE (regreSSHion),CVE-2024-6387,High,8.1,Yes,Yes,41,Internet,No,Open,OpenSSH
+V-2011,A-1003,Missing Rate Limiting on Payment Endpoint,CVE-SYN-2025-0410,Medium,6.5,No,Yes,88,Internet,No,Open,API Rate Limiting
+V-2012,A-1004,Outdated Node.js Runtime,CVE-SYN-2024-0777,Medium,6.2,No,Yes,95,Internet,No,Open,Node.js Runtime
+V-2013,A-1004,OpenSSH Unauthenticated RCE (regreSSHion),CVE-2024-6387,High,8.1,Yes,Yes,41,Internet,No,Open,OpenSSH
+V-2014,A-1004,Container Running as Root,CONTAINER-SYN-001,High,7.9,No,Yes,60,Internal,Yes,Open,Container Config
+V-2015,A-1005,Fortinet SSL-VPN Heap Buffer Overflow RCE,CVE-2024-21762,Critical,9.8,Yes,Yes,27,Internet,No,Open,VPN Firmware
+V-2016,A-1005,Fortinet FortiOS Authentication Bypass,CVE-2024-55591,Critical,9.8,Yes,Yes,14,Internet,No,Open,VPN Auth Module
+V-2017,A-1005,Weak Admin Password Policy,CVE-SYN-2024-0220,High,7.8,No,Yes,60,Internet,Yes,Open,Authentication Policy
+V-2018,A-1005,VPN Management Plane Internet-Exposed,CTRL-SYN-002,High,8.3,No,Yes,120,Internet,No,Open,Network Configuration
+V-2019,A-1006,Fortinet SSL-VPN Heap Buffer Overflow RCE,CVE-2024-21762,Critical,9.8,Yes,Yes,27,Internet,No,Open,VPN Firmware
+V-2020,A-1006,Fortinet FortiOS Authentication Bypass,CVE-2024-55591,Critical,9.8,Yes,Yes,14,Internet,No,Open,VPN Auth Module
+V-2021,A-1006,Outdated Firmware Version,CVE-SYN-2024-0188,Medium,5.8,No,Yes,92,Internet,No,Open,VPN Firmware
+V-2022,A-1007,Python Dependency with Known RCE,CVE-SYN-2025-0554,High,8.4,No,Yes,30,Internal,Yes,Open,Python Dependencies
+V-2023,A-1007,Insufficient Input Validation on Scoring API,CVE-SYN-2025-0601,Medium,6.3,No,Yes,45,Internal,Yes,Open,Scoring Engine
+V-2024,A-1008,Kong Gateway Admin API Exposed,CVE-SYN-2026-0011,Critical,9.3,Yes,Yes,5,Internet,No,Open,API Admin Interface
+V-2025,A-1008,OpenSSH Unauthenticated RCE (regreSSHion),CVE-2024-6387,High,8.1,Yes,Yes,41,Internet,No,Open,OpenSSH
+V-2026,A-1008,Insecure Partner Authentication Token,CVE-SYN-2025-0702,High,7.7,No,Yes,33,Internet,Yes,Open,Auth Token Handler
+V-2027,A-1009,PostgreSQL Privilege Escalation,CVE-2024-10978,Critical,9.2,Yes,Yes,40,Internal,Yes,Open,Database Engine
+V-2028,A-1009,Unencrypted Database Backup Files,CVE-SYN-2024-0420,High,8.0,No,Yes,55,Internal,Yes,Open,Backup Config
+V-2029,A-1009,Excessive DB User Privileges,CTRL-SYN-003,High,7.6,No,Yes,90,Internal,Yes,Open,Database Permissions
+V-2030,A-1010,PostgreSQL Privilege Escalation,CVE-2024-10978,Critical,9.2,Yes,Yes,40,Internal,Yes,Open,Database Engine
+V-2031,A-1010,Missing Encryption at Rest,CTRL-SYN-004,High,7.5,No,Yes,80,Internal,Yes,Open,Storage Encryption
+V-2032,A-1011,SQL Injection in CRM Search Module,CVE-SYN-2025-0441,High,8.7,Yes,Yes,32,Internet,No,Open,CRM Module
+V-2033,A-1011,Apache Tomcat Partial PUT RCE,CVE-2025-24813,Critical,9.8,Yes,Yes,21,Internet,No,Open,Tomcat Server
+V-2034,A-1011,Missing Security Headers,CVE-SYN-2024-0901,Low,3.7,No,Yes,90,Internet,No,Open,HTTP Headers
+V-2035,A-1011,Session Timeout Too Long,CVE-SYN-2024-0311,Medium,5.2,No,Yes,110,Internet,Yes,Open,Session Management
+V-2036,A-1012,Project Management Platform RCE,CVE-SYN-2026-0004,Critical,9.7,Yes,Yes,16,Internet,No,Open,Application Server
+V-2037,A-1012,Atlassian Jira Server-Side Template Injection,CVE-2023-22515,Critical,10.0,Yes,Yes,180,Internet,No,Open,Template Engine
+V-2038,A-1012,Excessive User Permissions on Projects,CVE-SYN-2024-0822,High,7.6,No,Yes,95,Internet,Yes,Open,Access Control
+V-2039,A-1012,Outdated Jira Version,CVE-SYN-2024-0155,Medium,6.5,No,Yes,130,Internet,No,Open,Application Version
+V-2040,A-1013,Confluence RCE via OGNL Injection,CVE-2023-22527,Critical,10.0,Yes,Yes,200,Internet,No,Open,OGNL Template Engine
+V-2041,A-1013,Confluence Broken Access Control,CVE-2023-22518,Critical,10.0,Yes,Yes,200,Internet,No,Open,Access Control
+V-2042,A-1013,Insecure Direct Object Reference in Spaces,CVE-SYN-2024-0634,High,7.5,No,Yes,88,Internet,No,Open,Space Management
+V-2043,A-1014,JetBrains TeamCity Authentication Bypass,CVE-2024-27198,Critical,9.8,Yes,Yes,155,Internet,No,Open,Authentication Handler
+V-2044,A-1014,JetBrains TeamCity Path Traversal,CVE-2024-27199,High,7.3,Yes,Yes,155,Internet,No,Open,File Handler
+V-2045,A-1014,CI/CD Secrets Exposed in Build Logs,CICD-SYN-001,Critical,9.4,Yes,Yes,14,Internet,Yes,Open,Build Pipeline
+V-2046,A-1014,Unauthenticated Build Trigger,CVE-SYN-2025-0887,High,8.2,No,Yes,60,Internet,No,Open,Build API
+V-2047,A-1015,PHP CGI Argument Injection,CVE-2024-4577,Critical,9.8,Yes,Yes,30,Internet,No,Open,PHP CGI
+V-2048,A-1015,File Upload to RCE Vulnerability,CVE-SYN-2025-0333,High,8.4,Yes,Yes,25,Internet,No,Open,HR Portal Upload
+V-2049,A-1015,Session Fixation Attack,CVE-SYN-2024-0311,Medium,5.2,No,Yes,110,Internet,Yes,Open,Session Handler
+V-2050,A-1016,Cross-Site Scripting in Ticket Comments,CVE-SYN-2025-0201,Medium,6.3,No,Yes,44,Internet,No,Open,Comment Module
+V-2051,A-1016,IDOR in Ticket View API,CVE-SYN-2025-0202,High,7.8,Yes,Yes,22,Internet,Yes,Open,Ticket API
+V-2052,A-1016,OpenSSH Unauthenticated RCE (regreSSHion),CVE-2024-6387,High,8.1,Yes,Yes,39,Internet,No,Open,OpenSSH
+V-2053,A-1017,SolarWinds Web Help Desk Deserialization RCE,CVE-2024-28986,Critical,9.8,Yes,Yes,60,Internal,No,Open,Java Deserialization
+V-2054,A-1017,SolarWinds WHD Hardcoded Credentials,CVE-2024-28987,Critical,9.1,Yes,Yes,60,Internal,No,Open,Authentication
+V-2055,A-1017,Missing Patch for Critical Vendor Advisory,CVE-SYN-2024-0900,High,8.0,No,Yes,90,Internal,Yes,Open,Application Core
+V-2056,A-1018,Microsoft Exchange NTLM Relay Privilege Escalation,CVE-2024-21410,Critical,9.8,Yes,Yes,90,Internet,No,Open,NTLM Auth
+V-2057,A-1018,Exchange Server-Side Request Forgery,CVE-SYN-2025-0501,High,8.5,No,Yes,50,Internet,No,Open,Request Processor
+V-2058,A-1019,WordPress Plugin Remote Code Execution,CVE-2024-4577,Critical,9.8,Yes,Yes,35,Internet,No,Open,PHP CGI / Plugin
+V-2059,A-1019,Outdated WordPress Core Version,CVE-SYN-2025-0123,High,7.9,Yes,Yes,35,Internet,No,Open,CMS Core
+V-2060,A-1019,Directory Listing Enabled,CVE-SYN-2023-0110,Medium,5.4,No,Yes,200,Internet,No,Open,Web Server Config
+V-2061,A-1020,Jenkins Arbitrary File Read via CLI,CVE-2024-23897,Critical,9.8,Yes,Yes,90,Internal,No,Open,Jenkins CLI
+V-2062,A-1020,Jenkins Build Script Injection,CVE-SYN-2025-0801,High,8.8,No,Yes,60,Internal,Yes,Open,Pipeline Script
+V-2063,A-1020,Exposed CI/CD Secrets in Environment Vars,CICD-SYN-001,Critical,9.4,Yes,Yes,21,Internal,Yes,Open,Build Pipeline
+V-2064,A-1021,Citrix ADC Session Token Leak (CitrixBleed),CVE-2023-4966,Critical,9.4,Yes,Yes,180,Internet,No,Open,NetScaler ADC
+V-2065,A-1021,Unencrypted Management Interface,CVE-SYN-2025-0601,Medium,6.8,No,Yes,75,Internet,No,Open,Management Plane
+V-2066,A-1022,Citrix ADC Session Token Leak (CitrixBleed),CVE-2023-4966,Critical,9.4,Yes,Yes,180,Internet,No,Open,NetScaler ADC
+V-2067,A-1022,SSL Certificate Near Expiry,CTRL-SYN-005,Medium,5.5,No,No,10,Internet,No,Open,TLS Certificate
+V-2068,A-1023,Cisco ASA Denial of Service,CVE-2024-20353,High,8.6,Yes,Yes,30,Internet,No,Open,VPN IKEv1
+V-2069,A-1023,Cisco ASA Remote Access VPN Unauthenticated DoS,CVE-2024-20358,High,8.6,No,Yes,30,Internet,No,Open,VPN Service
+V-2070,A-1023,Firewall Rule Allows Overly Broad Inbound Access,CTRL-SYN-006,High,7.9,No,Yes,180,Internet,No,Open,Firewall Policy
+V-2071,A-1024,Storage Bucket Public Policy Misconfiguration,CLOUD-SYN-001,Critical,9.1,Yes,Yes,21,Internal,No,Open,Object Storage Policy
+V-2072,A-1024,Backup Encryption Not Enforced,CLOUD-SYN-002,High,8.1,No,Yes,45,Internal,Yes,Open,Backup Config
+V-2073,A-1024,No Immutable Backup Policy,CTRL-SYN-007,High,7.5,No,Yes,80,Internal,Yes,Open,Backup Policy
+V-2074,A-1025,Kubernetes Dashboard Exposed Without Auth,K8S-SYN-001,Critical,9.5,No,Yes,45,Internal,No,Open,K8s Dashboard
+V-2075,A-1025,Privileged Containers Running in Production,K8S-SYN-002,High,8.4,No,Yes,60,Internal,Yes,Open,Pod Security Policy
+V-2076,A-1025,Container Images With Critical CVEs,CVE-SYN-2024-0999,High,8.2,No,Yes,55,Internal,Yes,Open,Container Image
+V-2077,A-1026,PostgreSQL Privilege Escalation,CVE-2024-10978,Critical,9.2,Yes,Yes,40,Internal,Yes,Open,Database Engine
+V-2078,A-1026,Excessive Data Access by Analytics Users,CTRL-SYN-003,Medium,6.0,No,Yes,70,Internal,Yes,Open,DB Access Control
+V-2079,A-1027,PostgreSQL Privilege Escalation,CVE-2024-10978,Critical,9.2,Yes,Yes,40,Internal,Yes,Open,Database Engine
+V-2080,A-1027,Customer PII Not Masked in Dev Queries,CTRL-SYN-008,High,7.8,No,Yes,95,Internal,Yes,Open,Data Masking
+V-2081,A-1030,HashiCorp Vault Audit Log Disabled,CTRL-SYN-009,High,8.0,No,Yes,60,Internal,Yes,Open,Vault Audit
+V-2082,A-1030,Vault Token with Excessive Policies,CTRL-SYN-010,High,7.6,No,Yes,45,Internal,Yes,Open,Vault Token Policy
+V-2083,A-1032,WordPress PHP Object Injection via Plugin,CVE-2024-4577,Critical,9.8,Yes,Yes,40,Internet,No,Open,PHP CGI
+V-2084,A-1032,WordPress Plugin XSS,CVE-SYN-2025-0123,High,7.9,Yes,Yes,45,Internet,No,Open,CMS Plugin
+V-2085,A-1032,Directory Listing Enabled,CVE-SYN-2023-0110,Medium,5.4,No,Yes,250,Internet,No,Open,Web Server Config
+V-2086,A-1032,PHP 7.4 End of Life,CVE-SYN-2024-0012,High,7.5,No,No,280,Internet,No,Open,PHP Runtime
+V-2087,A-1033,Confluence Server RCE - Older Version,CVE-2023-22527,Critical,10.0,Yes,Yes,200,Internal,No,Open,OGNL Template Engine
+V-2088,A-1033,Confluence Unrestricted File Upload,CVE-SYN-2025-0339,High,8.1,No,Yes,55,Internal,Yes,Open,File Upload Handler
+V-2089,A-1034,Windows Server 2012 R2 End of Support — No Security Patches,CVE-SYN-2024-0001,Critical,10.0,No,No,365,Internal,Yes,Open,Operating System
+V-2090,A-1034,PostgreSQL 11 End of Life,CVE-SYN-2024-0002,High,8.0,No,No,280,Internal,Yes,Open,Database Engine
+V-2091,A-1034,No EDR Agent Installed,CTRL-SYN-001,High,7.5,No,Yes,90,Internal,Yes,Open,Endpoint Control
+V-2092,A-1038,Fortinet SSL-VPN Heap Buffer Overflow RCE,CVE-2024-21762,Critical,9.8,Yes,Yes,27,Internet,No,Open,VPN Firmware
+V-2093,A-1038,Staging VPN Shares Production Credentials,CTRL-SYN-011,Critical,9.0,No,Yes,30,Internet,No,Open,Credential Management
+V-2094,A-1045,Microsoft Exchange NTLM Relay Privilege Escalation,CVE-2024-21410,Critical,9.8,Yes,Yes,90,Internal,No,Open,NTLM Auth
+V-2095,A-1046,Jenkins Arbitrary File Read via CLI,CVE-2024-23897,Critical,9.8,Yes,Yes,90,Internal,No,Open,Jenkins CLI
+V-2096,A-1046,Exposed CI/CD Secrets in Build Vars,CICD-SYN-001,Critical,9.4,Yes,Yes,14,Internal,Yes,Open,Build Pipeline
+V-2097,A-1047,Jenkins Arbitrary File Read via CLI,CVE-2024-23897,Critical,9.8,Yes,Yes,90,Internal,No,Open,Jenkins CLI
+V-2098,A-1047,Outdated Build Agent — EOL Version,CVE-SYN-2023-0771,Medium,6.2,No,Yes,180,Internal,Yes,Open,Build Agent
+V-2099,A-1051,Executive Laptop Missing EDR Agent,CTRL-SYN-001,High,7.5,No,Yes,9,Internal,Yes,Open,Endpoint Control
+V-2100,A-1051,Windows DWM Kernel Privilege Escalation,CVE-2024-30051,High,7.8,Yes,Yes,22,Internal,Yes,Open,Windows DWM
+V-2101,A-1051,NTLM Hash Disclosure via Spoofing,CVE-2024-43451,Medium,6.5,Yes,Yes,30,Internal,Yes,Open,NTLM Protocol
+V-2102,A-1052,Windows DWM Kernel Privilege Escalation,CVE-2024-30051,High,7.8,Yes,Yes,22,Internal,Yes,Open,Windows DWM
+V-2103,A-1052,NTLM Hash Disclosure via Spoofing,CVE-2024-43451,Medium,6.5,Yes,Yes,30,Internal,Yes,Open,NTLM Protocol
+V-2104,A-1057,Missing EDR Agent on Operations Workstation,CTRL-SYN-001,High,7.5,No,Yes,7,Internal,Yes,Open,Endpoint Control
+V-2105,A-1057,Windows 10 21H2 EOL — No Extended Support,CVE-SYN-2024-0003,High,7.9,No,No,90,Internal,Yes,Open,Operating System
+V-2106,A-1058,Missing EDR Agent on Finance Workstation,CTRL-SYN-001,High,7.5,No,Yes,6,Internal,Yes,Open,Endpoint Control
+V-2107,A-1058,Windows 10 21H2 EOL,CVE-SYN-2024-0003,High,7.9,No,No,90,Internal,Yes,Open,Operating System
+V-2108,A-1059,Windows Server 2012 R2 End of Support,CVE-SYN-2024-0001,Critical,10.0,No,No,365,Internal,Yes,Open,Operating System
+V-2109,A-1059,IIS 8.5 Multiple Vulnerabilities,CVE-SYN-2024-0050,High,8.3,No,No,280,Internal,Yes,Open,Web Server
+V-2110,A-1059,No EDR Installed on Legacy Server,CTRL-SYN-001,High,7.5,No,Yes,62,Internal,Yes,Open,Endpoint Control
+V-2111,A-1059,Orphaned Asset — No Assigned Owner,CTRL-SYN-012,High,8.0,No,Yes,62,Internal,Yes,Open,Asset Management
+V-2112,A-1060,Ubuntu 18.04 End of Life,CVE-SYN-2024-0004,High,8.0,No,No,200,Internal,Yes,Open,Operating System
+V-2113,A-1060,DR Site Not Tested in Over 6 Months,CTRL-SYN-013,High,7.5,No,Yes,185,Internal,Yes,Open,DR Procedure
+V-2114,A-1060,No EDR on Disaster Recovery Site,CTRL-SYN-001,High,7.5,No,Yes,38,Internal,Yes,Open,Endpoint Control

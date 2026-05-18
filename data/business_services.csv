@@ -1,0 +1,21 @@
+business_service,business_owner,business_impact,customer_facing,compliance_scope,revenue_impact,rto_hours,depends_on,risk_appetite
+Customer Login,Chief Digital Officer,Users cannot authenticate to the customer portal; all customer-facing transactions blocked,Yes,GDPR,Critical,1,Identity Verification,Very Low
+Payment Processing,CFO,Payments and fund transfers fail; PCI DSS breach obligations triggered,Yes,PCI DSS,Critical,1,"Customer Login, Fraud Detection",Very Low
+Identity Verification,Chief Digital Officer,KYC and onboarding fails; regulatory obligations at risk,Yes,"GDPR, UAE PDPL",Critical,1,,Very Low
+Fraud Detection,CISO,Fraudulent transactions may process undetected; significant financial and reputational loss,No,PCI DSS,Critical,1,,Very Low
+Partner API Gateway,VP Partnerships,Bank and fintech partner integrations fail; SLA breach penalties apply,Yes,"PCI DSS, ISO 27001",High,2,Payment Processing,Low
+CRM Platform,Head of Sales,Sales pipeline and customer support workflows disrupted,Yes,GDPR,Medium,8,Customer Login,Medium
+Customer Support Portal,Head of Customer Experience,Support agents cannot access tickets; customer escalations unmanaged,Yes,GDPR,Medium,4,Customer Login,Medium
+Financial Reporting,CFO,Monthly and quarterly close delayed; board and regulator reporting at risk,No,"SOC 2, IFRS",High,4,,Very Low
+Compliance Reporting,Chief Legal Officer,Regulatory submissions delayed; potential fines from CBUAE and VARA,No,"SOC 2, UAE PDPL",Medium,24,Financial Reporting,Low
+Employee Services,Head of HR,HR workflows and payroll processing impacted; employee data at risk,No,GDPR,Medium,12,,Low
+Remote Access,CIO,Remote employees and administrators lose secure network access,No,ISO 27001,High,2,,Low
+Software Delivery,VP Engineering,Product releases blocked; CI/CD pipelines offline,No,SOC 2,Medium,24,,Medium
+DevOps Platform,VP Engineering,"Build, deploy and monitoring toolchain offline; operational visibility lost",No,SOC 2,Medium,12,Software Delivery,Medium
+Analytics Platform,Chief Product Officer,Business intelligence and product analytics unavailable,No,GDPR,Low,48,,High
+Data Warehouse,Chief Product Officer,Historical reporting and ML model training blocked,No,GDPR,Medium,24,,Medium
+Backup and Recovery,Head of Infrastructure,Disaster recovery capability lost; data restoration impossible if primary fails,No,ISO 27001,High,4,,Low
+Internal Communications,COO,Internal email and chat offline; operational coordination degraded,No,ISO 27001,Low,24,,Medium
+Corporate Website,Head of Marketing,Brand presence offline; press and investor communications disrupted,Yes,None,Low,24,,High
+Executive Operations,CEO Office,Executive communications and sensitive strategic files compromised,No,ISO 27001,High,8,,Low
+Testing Platform,VP Engineering,QA and testing delays only; no production impact,No,None,Low,48,,High

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TawasolPay Cyber Risk Assistant</title>
+    <style>
+        :root {
+            --bg: #f5f1e8;
+            --paper: #fffdf8;
+            --ink: #172033;
+            --muted: #5c667a;
+            --line: #d7d0c2;
+            --accent: #0d6b63;
+            --accent-soft: #d8eee8;
+            --danger: #a33b20;
+            --danger-soft: #f6dfd8;
+            --shadow: 0 18px 50px rgba(25, 32, 48, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background:
+                radial-gradient(circle at top left, #f3ead7 0, transparent 26rem),
+                linear-gradient(180deg, #f7f3ea 0%, #efe8db 100%);
+            color: var(--ink);
+        }
+
+        .page {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 32px 18px 48px;
+        }
+
+        .hero {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+        }
+
+        .eyebrow {
+            font-size: 0.82rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 4vw, 3.6rem);
+            line-height: 1.05;
+        }
+
+        .subtitle {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            max-width: 780px;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .meta-chip {
+            background: #f3efe7;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .status {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .spinner {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 4px solid #d8d1c4;
+            border-top-color: var(--accent);
+            margin: 0 auto 14px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .cards {
+            display: grid;
+            gap: 18px;
+        }
+
+        .card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            border-bottom: 1px solid #e4dccf;
+            padding-bottom: 16px;
+            margin-bottom: 18px;
+        }
+
+        .rank {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 54px;
+            height: 54px;
+            border-radius: 16px;
+            background: var(--danger);
+            color: white;
+            font-size: 1.05rem;
+            font-weight: bold;
+        }
+
+        .score {
+            color: var(--danger);
+            font-size: 0.96rem;
+            font-weight: bold;
+        }
+
+        .kicker {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+
+        .title {
+            margin: 0;
+            font-size: 1.65rem;
+            line-height: 1.18;
+        }
+
+        .lead {
+            margin: 14px 0 0;
+            color: var(--ink);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .panel {
+            border: 1px solid #e4dccf;
+            border-radius: 18px;
+            padding: 16px;
+            background: #fffaf1;
+        }
+
+        .panel.accent {
+            background: var(--accent-soft);
+            border-color: #b8ddd2;
+        }
+
+        .panel.danger {
+            background: var(--danger-soft);
+            border-color: #e7b6a8;
+        }
+
+        .panel h3 {
+            margin: 0 0 10px;
+            font-size: 0.94rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .panel p {
+            margin: 0;
+            line-height: 1.55;
+            font-size: 0.97rem;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .chip {
+            border: 1px solid #d8cfbf;
+            border-radius: 999px;
+            padding: 7px 10px;
+            font-size: 0.84rem;
+            background: #f7f3ea;
+            color: var(--muted);
+        }
+
+        .evidence-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .evidence-list li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .footnote {
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 780px) {
+            .page {
+                padding: 18px 14px 32px;
+            }
+
+            .hero,
+            .card,
+            .status {
+                border-radius: 18px;
+                padding: 18px;
+            }
+
+            .card-top,
+            .grid {
+                grid-template-columns: 1fr;
+                display: grid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <section class="hero">
+            <div class="eyebrow">AI Intern Assignment Submission</div>
+            <h1>TawasolPay Cyber Risk Assistant</h1>
+            <p class="subtitle">
+                A ranked, explainable view of the top five cyber risks across TawasolPay's environment,
+                enriched with active threat intelligence, CISA KEV context, and retrieved NIST SP 800-53 Rev. 5 remediation guidance.
+            </p>
+            <div id="metadata" class="meta"></div>
+        </section>
+
+        <section id="loading" class="status">
+            <div class="spinner"></div>
+            <p>Loading datasets, scoring risks, and retrieving the most relevant NIST controls.</p>
+        </section>
+
+        <section id="error" class="status hidden"></section>
+        <section id="cards" class="cards hidden"></section>
+    </main>
+
+    <script>
+        function chip(text) {
+            return `<span class="chip">${text}</span>`;
+        }
+
+        function renderMetadata(payload) {
+            const metadata = payload.dataset_metadata || {};
+            const generatedAt = payload.generated_at ? new Date(payload.generated_at).toLocaleString() : "Unknown";
+            document.getElementById("metadata").innerHTML = [
+                chip(`${metadata.assets_count || 0} assets`),
+                chip(`${metadata.vulnerabilities_count || 0} vulnerabilities`),
+                chip(`${metadata.threat_records_count || 0} threat intel records`),
+                chip(`Generated ${generatedAt}`)
+            ].join("");
+        }
+
+        function renderRiskCard(risk) {
+            const threatTags = (risk.threat_intel || []).map(item => chip(`Campaign: ${item}`)).join("");
+            const actorTags = (risk.threat_actors || []).map(item => chip(`Actor: ${item}`)).join("");
+            const evidenceHtml = (risk.evidence || []).map(item =>
+                `<li><strong>${item.label}</strong> (+${item.points})<br>${item.detail}</li>`
+            ).join("");
+
+            return `
+                <article class="card">
+                    <div class="card-top">
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <div class="rank">#${risk.rank}</div>
+                            <div>
+                                <div class="kicker">${risk.asset_type} • ${risk.asset_environment} • ${risk.business_service}</div>
+                                <h2 class="title">${risk.cve} on ${risk.asset}</h2>
+                                <p class="lead">${risk.summary}</p>
+                            </div>
+                        </div>
+                        <div class="score">Risk score: ${risk.risk_score}</div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="panel danger">
+                            <h3>Why This Ranks Here</h3>
+                            <p>${risk.why_it_ranks_here}</p>
+                            <div class="chips">${threatTags}${actorTags}</div>
+                        </div>
+
+                        <div class="panel accent">
+                            <h3>NIST Remediation Guidance</h3>
+                            <p><strong>${risk.nist_control_id} — ${risk.nist_control_title}</strong></p>
+                            <p style="margin-top:10px;">${risk.remediation_summary}</p>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="panel">
+                            <h3>Risk Entry</h3>
+                            <p><strong>Asset:</strong> ${risk.asset}</p>
+                            <p><strong>Vulnerability:</strong> ${risk.vulnerability}</p>
+                            <p><strong>Matched threat intel:</strong> ${(risk.threat_intel || []).join(", ") || "No direct CVE-level match"}</p>
+                            <p><strong>Business service at risk:</strong> ${risk.business_service}</p>
+                        </div>
+
+                        <div class="panel">
+                            <h3>Key Evidence</h3>
+                            <ol class="evidence-list">${evidenceHtml}</ol>
+                        </div>
+                    </div>
+
+                    ${risk.kev_required_action ? `<p class="footnote"><strong>CISA KEV required action:</strong> ${risk.kev_required_action}</p>` : ""}
+                    ${risk.validation_evidence ? `<p class="footnote"><strong>Suggested validation evidence:</strong> ${risk.validation_evidence}</p>` : ""}
+                </article>
+            `;
+        }
+
+        async function loadRisks() {
+            const loadingEl = document.getElementById("loading");
+            const errorEl = document.getElementById("error");
+            const cardsEl = document.getElementById("cards");
+
+            try {
+                const response = await fetch("/api/risks");
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const payload = await response.json();
+                renderMetadata(payload);
+                cardsEl.innerHTML = (payload.top_risks || []).map(renderRiskCard).join("");
+
+                loadingEl.classList.add("hidden");
+                cardsEl.classList.remove("hidden");
+            } catch (error) {
+                loadingEl.classList.add("hidden");
+                errorEl.classList.remove("hidden");
+                errorEl.innerHTML = `<p>Failed to load the cyber risk report. ${error.message}</p>`;
+            }
+        }
+
+        loadRisks();
+    </script>
+</body>
+</html>

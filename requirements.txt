@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+chromadb
+sentence-transformers
+groq
+requests
+python-multipart
+python-dotenv

@@ -1,0 +1,61 @@
+asset_id,asset_name,asset_type,environment,owner_team,business_service,internet_exposed,criticality,data_classification,edr_installed,last_seen_days,location,vendor_product
+A-1001,auth-gateway-prod-01,Web Server,Production,Identity Team,Customer Login,Yes,Critical,Customer PII,Yes,1,UAE,nginx 1.22 / Ubuntu 22.04
+A-1002,idv-gateway-prod,API Server,Production,Identity Team,Identity Verification,Yes,Critical,Customer PII,Yes,1,UAE,Node.js 18 / Ubuntu 22.04
+A-1003,payment-api-prod-01,API Server,Production,Payments Team,Payment Processing,Yes,Critical,Payment Card Data,Yes,1,UAE,Node.js 20 / Ubuntu 22.04
+A-1004,payment-api-prod-02,API Server,Production,Payments Team,Payment Processing,Yes,Critical,Payment Card Data,Yes,1,UAE,Node.js 20 / Ubuntu 22.04
+A-1005,vpn-edge-01,VPN Gateway,Production,Network Team,Remote Access,Yes,Critical,Internal Access,No,2,UAE,Fortinet FortiGate 7.4.1
+A-1006,vpn-edge-02,VPN Gateway,Production,Network Team,Remote Access,Yes,Critical,Internal Access,No,2,UAE,Fortinet FortiGate 7.4.1
+A-1007,fraud-detection-api,API Server,Production,Security Engineering,Fraud Detection,No,Critical,Transaction Data,Yes,1,UAE,Python 3.11 / FastAPI / Ubuntu 22.04
+A-1008,partner-api-gateway-prod,API Server,Production,Partnerships Team,Partner API Gateway,Yes,Critical,Payment Card Data,Yes,1,UAE,Kong Gateway 3.4 / Ubuntu 22.04
+A-1009,finance-db-prod-01,Database,Production,Finance Team,Financial Reporting,No,Critical,Financial Data,Yes,1,UAE,PostgreSQL 14 / Ubuntu 20.04
+A-1010,finance-db-prod-02,Database,Production,Finance Team,Financial Reporting,No,Critical,Financial Data,Yes,1,UAE,PostgreSQL 14 / Ubuntu 20.04
+A-1011,crm-app-prod,Application Server,Production,Sales Ops,CRM Platform,Yes,High,Customer PII,Yes,2,UAE,Java 11 / Tomcat 9 / Ubuntu 20.04
+A-1012,jira-prod,Application Server,Production,Engineering,Software Delivery,Yes,High,Source Code,Yes,1,UAE,Atlassian Jira 9.4
+A-1013,confluence-prod,Application Server,Production,Engineering,Software Delivery,Yes,High,Source Code,Yes,1,UAE,Atlassian Confluence 8.5
+A-1014,teamcity-prod,Build Server,Production,DevOps,DevOps Platform,Yes,High,Source Code,No,3,UAE,JetBrains TeamCity 2023.11
+A-1015,hr-portal-prod,Web Application,Production,HR Team,Employee Services,Yes,High,Employee PII,Yes,2,UAE,PHP 8.1 / Apache 2.4 / Ubuntu 22.04
+A-1016,customer-support-portal,Web Application,Production,Customer Experience,Customer Support Portal,Yes,High,Customer PII,Yes,1,UAE,Django 4.2 / Ubuntu 22.04
+A-1017,helpdesk-prod,Application Server,Production,IT Operations,Employee Services,No,High,Internal Confidential,Yes,5,UAE,SolarWinds Web Help Desk 12.7
+A-1018,email-server-prod,Mail Server,Production,IT Operations,Internal Communications,Yes,High,Internal Confidential,Yes,1,UAE,Microsoft Exchange 2019 CU13
+A-1019,corporate-site-prod,Web Server,Production,Marketing,Corporate Website,Yes,Medium,Public Data,Yes,1,UAE,WordPress 6.4 / PHP 8.1 / nginx
+A-1020,jenkins-prod,Build Server,Production,DevOps,DevOps Platform,No,High,Source Code,No,4,India,Jenkins 2.426
+A-1021,load-balancer-prod-01,Load Balancer,Production,Network Team,Customer Login,Yes,High,Internal Access,No,1,UAE,Citrix NetScaler ADC 13.0
+A-1022,load-balancer-prod-02,Load Balancer,Production,Network Team,Payment Processing,Yes,High,Internal Access,No,1,UAE,Citrix NetScaler ADC 13.0
+A-1023,network-firewall-01,Firewall,Production,Network Team,Remote Access,Yes,Critical,Internal Access,No,2,UAE,Cisco ASA 9.18
+A-1024,backup-storage-prod,Object Storage,Production,Infrastructure,Backup and Recovery,No,Critical,Internal Confidential,No,6,UAE,AWS S3 / Veeam 12
+A-1025,k8s-cluster-prod-01,Kubernetes Cluster,Production,DevOps,Payment Processing,No,Critical,Payment Card Data,Yes,1,UAE,Kubernetes 1.27 / Ubuntu 22.04
+A-1026,analytics-db-prod,Database,Production,Data Engineering,Analytics Platform,No,Medium,Aggregated Analytics,Yes,2,UAE,PostgreSQL 15 / Ubuntu 22.04
+A-1027,data-warehouse-prod,Database,Production,Data Engineering,Data Warehouse,No,High,Customer PII,Yes,2,UAE,PostgreSQL 14 / Ubuntu 20.04
+A-1028,monitoring-server-prod,Application Server,Production,DevOps,DevOps Platform,No,Medium,Internal Confidential,Yes,3,UAE,Grafana 10 / Prometheus / Ubuntu 22.04
+A-1029,log-aggregator-prod,Application Server,Production,Security Engineering,DevOps Platform,No,Medium,Log Data,Yes,2,UAE,Elasticsearch 8.11 / Ubuntu 22.04
+A-1030,secrets-vault-prod,Application Server,Production,DevOps,DevOps Platform,No,Critical,Secrets,Yes,1,UAE,HashiCorp Vault 1.15
+A-1031,compliance-db-prod,Database,Production,Legal,Compliance Reporting,No,High,Regulatory Data,Yes,3,UAE,PostgreSQL 14 / Ubuntu 20.04
+A-1032,marketing-cms-prod,Web Server,Production,Marketing,Corporate Website,Yes,Medium,Public Data,Yes,1,UAE,WordPress 6.2 / PHP 7.4 / Apache 2.4
+A-1033,internal-wiki-prod,Application Server,Production,Engineering,Internal Communications,No,Medium,Internal Confidential,Yes,4,UAE,Atlassian Confluence 7.19
+A-1034,legacy-payments-db,Database,Production,Payments Team,Financial Reporting,No,High,Financial Data,No,45,UAE,PostgreSQL 11 / Windows Server 2012 R2
+A-1035,crm-db-prod,Database,Production,Sales Ops,CRM Platform,No,High,Customer PII,Yes,2,UAE,PostgreSQL 14 / Ubuntu 20.04
+A-1036,auth-gateway-staging,Web Server,Staging,Identity Team,Customer Login,Yes,Medium,Synthetic Test Data,Yes,3,UAE,nginx 1.22 / Ubuntu 22.04
+A-1037,payment-api-staging,API Server,Staging,Payments Team,Payment Processing,No,Medium,Synthetic Test Data,Yes,4,UAE,Node.js 20 / Ubuntu 22.04
+A-1038,vpn-staging,VPN Gateway,Staging,Network Team,Remote Access,Yes,Medium,Staging Access,No,10,India,Fortinet FortiGate 7.2.5
+A-1039,jira-staging,Application Server,Staging,Engineering,Software Delivery,No,Low,Test Data,No,7,India,Atlassian Jira 9.4
+A-1040,confluence-staging,Application Server,Staging,Engineering,Software Delivery,No,Low,Test Data,No,9,India,Atlassian Confluence 8.5
+A-1041,teamcity-staging,Build Server,Staging,DevOps,DevOps Platform,No,Low,Test Data,No,11,India,JetBrains TeamCity 2023.11
+A-1042,k8s-staging-01,Kubernetes Cluster,Staging,DevOps,Testing Platform,No,Low,Test Data,No,5,India,Kubernetes 1.27 / Ubuntu 22.04
+A-1043,db-staging-01,Database,Staging,Engineering,Testing Platform,No,Low,Synthetic Test Data,No,6,India,PostgreSQL 14 / Ubuntu 22.04
+A-1044,fraud-detection-staging,API Server,Staging,Security Engineering,Fraud Detection,No,Low,Synthetic Test Data,Yes,5,UAE,Python 3.11 / FastAPI / Ubuntu 22.04
+A-1045,email-server-staging,Mail Server,Staging,IT Operations,Internal Communications,No,Low,Test Data,No,14,India,Microsoft Exchange 2019 CU12
+A-1046,dev-build-server-01,Build Server,Development,Engineering,Software Delivery,No,Medium,Source Code,No,12,India,Jenkins 2.414 / Ubuntu 22.04
+A-1047,dev-build-server-02,Build Server,Development,Engineering,Software Delivery,No,Medium,Source Code,No,15,India,Jenkins 2.387 / Ubuntu 20.04
+A-1048,dev-db-primary,Database,Development,Engineering,Software Delivery,No,Low,Synthetic Dev Data,No,8,India,PostgreSQL 15 / Ubuntu 22.04
+A-1049,dev-api-server,API Server,Development,Engineering,Software Delivery,No,Low,Source Code,No,10,India,Node.js 20 / Ubuntu 22.04
+A-1050,dev-k8s-cluster,Kubernetes Cluster,Development,DevOps,Testing Platform,No,Low,Test Data,No,20,India,Kubernetes 1.28 / Ubuntu 22.04
+A-1051,exec-laptop-ceo,Endpoint,Production,Executive Office,Executive Operations,No,High,Executive Confidential,No,9,UAE,Windows 11 22H2
+A-1052,exec-laptop-cfo,Endpoint,Production,Finance Team,Executive Operations,No,High,Executive Confidential,Yes,2,UAE,Windows 11 22H2
+A-1053,exec-laptop-cto,Endpoint,Production,Engineering,Executive Operations,No,High,Executive Confidential,Yes,1,UAE,macOS 14.2
+A-1054,exec-laptop-ciso,Endpoint,Production,Security,Executive Operations,No,High,Security Data,Yes,1,UAE,macOS 14.2
+A-1055,dev-workstation-001,Endpoint,Development,Engineering,Software Delivery,No,Medium,Source Code,Yes,2,UAE,macOS 13.6
+A-1056,dev-workstation-002,Endpoint,Development,Engineering,Software Delivery,No,Medium,Source Code,Yes,3,India,Ubuntu 22.04
+A-1057,ops-workstation-001,Endpoint,Production,IT Operations,Employee Services,No,Medium,Internal Confidential,No,7,UAE,Windows 10 21H2
+A-1058,ops-workstation-002,Endpoint,Production,Finance Team,Financial Reporting,No,Medium,Financial Data,No,6,UAE,Windows 10 21H2
+A-1059,legacy-reporting-server,Application Server,Production,,Financial Reporting,No,High,Financial Data,No,62,UAE,Windows Server 2012 R2 / IIS 8.5
+A-1060,dr-failover-site,Application Server,Production,Infrastructure,Backup and Recovery,No,Critical,Internal Confidential,No,38,UAE,Various / Ubuntu 18.04

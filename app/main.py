@@ -11,8 +11,8 @@ from fastapi.staticfiles import StaticFiles
 if __package__ is None or __package__ == "":
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from app.data_ingestion import load_all_data
-from app.rag_service import RAGService
+from app.ingestion import load_all_data
+from app.retrieval import RAGService
 from app.risk_engine import get_top_risks
 
 

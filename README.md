@@ -48,14 +48,23 @@ This keeps the demo reliable for reviewers while still supporting the intended s
 ```text
 app/
   __init__.py         # package marker for module and direct-script execution
-  data_ingestion.py   # data loading, joins, KEV/threat enrichment, threat-report ingestion
-  risk_engine.py      # explainable risk scoring
-  rag_service.py      # NIST retrieval and readable report generation
   main.py             # FastAPI app
+  risk_engine.py      # explainable risk scoring
+  ingestion/
+    loader.py
+    nist_parser.py
+    remediation_matcher.py
+    threat_report.py
+    common.py
+  retrieval/
+    rag_service.py
+    nist_retriever.py
+    text_helpers.py
 public/
   index.html          # human-readable frontend
 data/
   ...                 # provided datasets + retrieved public reference files
+get_data.py           # refreshes kev.json and nist_800_53.json from official sources
 ```
 
 ## Running locally
@@ -99,7 +108,12 @@ This requires the embedding model to be available locally or downloadable from t
 
 ## Data refresh
 
-`get_data.py` is included as a helper to refresh public reference files such as `kev.json`. The repository already includes the data needed to run the submission locally.
+`get_data.py` refreshes the two public reference files used by the app:
+
+- `data/kev.json` from the official CISA KEV feed
+- `data/nist_800_53.json` from the official NIST OSCAL content source
+
+The repository already includes the data needed to run the submission locally.
 
 ## Supporting question 1 - The data split
 

@@ -4,6 +4,11 @@ This project is a submission for the `AI Intern - Take-Home Assignment` to build
 
 The application ingests the provided structured datasets, correlates them with the `CISA Known Exploited Vulnerabilities (KEV)` catalog, ranks the most important risks using assignment-aligned factors, and retrieves remediation guidance from the `NIST SP 800-53 Rev. 5` control catalog.
 
+## Live Links
+
+- Live demo: `https://cyber-risk-assistant-1047144688999.us-central1.run.app`
+- GitHub repository: `https://github.com/princ0301/Hive-Pro-AI`
+
 ## What the system does
 
 - Ingests `assets.csv`, `vulnerabilities.csv`, `threat_intelligence.csv`, `business_services.csv`, `remediation_guidance.csv`, `kev.json`, `nist_800_53.json`, and `synthetic_threat_report.md`
@@ -146,4 +151,9 @@ If I had another day, the single most important improvement would be to move the
 
 ## Notes on deployment
 
-The codebase is ready to deploy to a small FastAPI-compatible host such as `Render`, `Railway`, or `Fly.io`. The local submission package includes everything needed to run the app; the remaining deployment step is publishing it to a public URL in the target hosting account.
+The application is deployed on `Google Cloud Run`.
+
+- Live demo: `https://cyber-risk-assistant-1047144688999.us-central1.run.app`
+- GitHub repository: `https://github.com/princ0301/Hive-Pro-AI`
+
+The local submission package includes everything needed to run the app locally, and the public deployment requirement is satisfied by the Cloud Run service above.

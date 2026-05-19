@@ -7,7 +7,6 @@ The application ingests the provided structured datasets, correlates them with t
 ## Live Links
 
 - Live demo: `https://cyber-risk-assistant-1047144688999.us-central1.run.app`
-- GitHub repository: `https://github.com/princ0301/Hive-Pro-AI`
 
 ## What the system does
 
@@ -74,27 +73,27 @@ get_data.py           # refreshes kev.json and nist_800_53.json from official so
 
 ## Running locally
 
-1. Create and activate a virtual environment:
+1. Clone the repository and move into the project directory:
 
    ```bash
-   python -m venv .venv
-   .venv\Scripts\activate
+   git clone https://github.com/princ0301/Hive-Pro-AI.git
+   cd Hive-Pro-AI
+   ```
+
+2. Create and activate a virtual environment:
+
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
-2. Start the app:
-
-   ```bash
-   python -m app.main
-   ```
-
-   You can also run:
-
-   ```bash
+3. Start the app:
+  ```bash
    python .\app\main.py
    ```
 
-3. Open:
+4. Open:
 
    ```text
    http://localhost:8000
@@ -106,7 +105,7 @@ If you want to use semantic retrieval for NIST controls instead of the offline l
 
 ```bash
 set ENABLE_NIST_EMBEDDINGS=1
-python -m app.main
+python .\app\main.py
 ```
 
 This requires the embedding model to be available locally or downloadable from the execution environment.
@@ -154,6 +153,5 @@ If I had another day, the single most important improvement would be to move the
 The application is deployed on `Google Cloud Run`.
 
 - Live demo: `https://cyber-risk-assistant-1047144688999.us-central1.run.app`
-- GitHub repository: `https://github.com/princ0301/Hive-Pro-AI`
 
 The local submission package includes everything needed to run the app locally, and the public deployment requirement is satisfied by the Cloud Run service above.
